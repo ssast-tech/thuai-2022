@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/main.dir/contestant_code.cpp.o CMakeFiles/main.dir/egg_sdk.cpp.o CMakeFiles/main.dir/schema.cpp.o CMakeFiles/main.dir/stream_helper.cpp.o -o bin/main 
