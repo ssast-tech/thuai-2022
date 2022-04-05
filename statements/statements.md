@@ -47,7 +47,7 @@
 
 ### 观看回放
 
-您也可以使用 Saiblo 在对局结束后打开的窗口中的播放器，或者点击右上角的「下载回放」按钮将回放文件下载后，在Saiblo的「网页播放器」中家在回放文件。
+您可以使用 Saiblo 在对局结束后打开的窗口中的播放器，或者点击右上角的「下载回放」按钮将回放文件下载后，在Saiblo的「网页播放器」中家在回放文件。
 
 ### 决出名次
 
@@ -73,7 +73,8 @@ AI将使用C++编写。对局完成后，会将对局文件存入 `replay.bin` �
 
 ### 评测逻辑文件下载
 
-出于安全考虑，评测逻辑只提供构建好的Linux版本，可在 https://github.com/ssast-tech/thuai-egg-releases 进行下载，也可以直接采用下列链接。下载后即可采用 judger.py 和评测逻辑文件配合，进行测试。Windows可以使用WSL，Mac用户可以使用直接使用网页测评器。（如果后续需求较大，我们会额外提供Windows和Mac的版本）
+出于安全考虑，评测逻辑只提供构建好的Linux版本，及游戏包中的`snow`文件。也可以直接采用下列链接。下载后即可采用 judger.py 和评测逻辑文件配合，进行测试。Windows可以使用WSL，Mac用户可以使用直接使用网页测评器。（如果后续需求较大，我们会额外提供Windows和Mac的版本）
 
-- [Ubuntu 16.04 x86_64](https://cdn.jsdelivr.net/gh/ssast-tech/thuai-egg-releases@2e3134fe/eggs-ubuntu-16.04-x86_64) // 需要改链接
+- [Ubuntu 16.04 x86_64](https://github.com/ssast-tech/thuai-2022) 
   - 注：Linux版本下载后需要手动授予可执行权限
+

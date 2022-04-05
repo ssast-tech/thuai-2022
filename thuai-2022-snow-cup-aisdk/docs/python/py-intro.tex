@@ -17,9 +17,8 @@
 
 \lstset{basicstyle=\ttfamily,breaklines=true}
 
-\title{“巧取智夺”赛道Python SDK}
-\author{软院、计算机系联合开发组}
-\date{\today\\版本：\gitAbbrevHash}
+\title{“冰雪杯”赛道Python SDK}
+\author{软院开发组}
 
 \begin{document}
 \maketitle
@@ -33,7 +32,7 @@
 .2 main.py\DTcomment{选手AI代码文件}.
 .2 aisdk\DTcomment{SDK包}.
 .3 \_\_init\_\_.py \DTcomment{\texttt{aisdk}包定义}.
-.3 entities.py\DTcomment{描述玩家和金蛋状态的类型}.
+.3 entities.py\DTcomment{描述玩家和冰墩墩状态的类型}.
 .3 gamestate.py\DTcomment{和评测逻辑交互的API}.
 .3 player\_movement.py\DTcomment{描述玩家移动的类型}.
 .3 utils.py\DTcomment{SDK内部使用的和评测逻辑交互的辅助类}.
@@ -119,42 +118,42 @@ SDK中提供的主要数据结构见表\ref{tab:ds}。
 
 \end{itemize}
 
-\item[金蛋基本信息] 通过对 \lstinline{Egg} 对象属性的读取，以尝试获取金蛋的具体信息。下文中 \lstinline{e} 代表金蛋对象。
+\item[冰墩墩基本信息] 通过对 \lstinline{Egg} 对象属性的读取，以尝试获取冰墩墩的具体信息。下文中 \lstinline{e} 代表冰墩墩对象。
 
 \begin{itemize}
 \item
 \lstinline{Egg(egg_id: int)}\\[-2pt]
-传入金蛋编号，获得其基本信息对象。
+传入冰墩墩编号，获得其基本信息对象。
 
 \item \lstinline{e.egg_id}\\[-2pt]
-只读。金蛋 \lstinline{e} 的id.
+只读。冰墩墩 \lstinline{e} 的id.
 
 \item \lstinline{e.position}\\[-2pt]
-只读。金蛋的坐标。
+只读。冰墩墩的坐标。
 
 \item \lstinline{e.holder}\\[-2pt]
-只读。拿着这个金蛋的玩家对象，若为 \lstinline{None} 表示蛋在地上。
+只读。拿着这个冰墩墩的玩家对象，若为 \lstinline{None} 表示蛋在地上。
 
 \item \lstinline{e.score}\\[-2pt]
-只读。金蛋的分数。
+只读。冰墩墩的分数。
 \end{itemize}
 
-\item[金蛋控制] 下文中 \lstinline{p} 代表玩家对象。
+\item[冰墩墩控制] 下文中 \lstinline{p} 代表玩家对象。
 
 \begin{itemize}
 
 \item
 \lstinline{p.try_grab_egg(egg_id: int)}\\[-2pt]
-让当前AI队伍中某玩家对象 \lstinline{p} 尝试抓取金蛋。只有满足下列条件时，抓取才能成功：
+让当前AI队伍中某玩家对象 \lstinline{p} 尝试抓取冰墩墩。只有满足下列条件时，抓取才能成功：
 \begin{itemize}\setlength\itemsep{0em}
-\item 蛋在地上且糖豆人中心和蛋表面距离不超过 \SI{0.1}{\meter}（即到蛋中心距离不超过\SI{0.69}{\meter}）\footnote{$\diameter_{\text{玩家}}=\SI{0.48}{\meter},\diameter_{\text{金蛋}}=\SI{0.7}{\meter}$}
+\item 蛋在地上且糖豆人中心和蛋表面距离不超过 \SI{0.1}{\meter}（即到蛋中心距离不超过\SI{0.69}{\meter}）\footnote{$\diameter_{\text{玩家}}=\SI{0.48}{\meter},\diameter_{\text{冰墩墩}}=\SI{0.7}{\meter}$}
 \item 该蛋由别人拿取，且玩家和蛋距离同样不超过\SI{0.69}{\meter}
 \item 多人在同回合抢同一个蛋时，某人和蛋距离最近
 \end{itemize}
 
 \item
 \lstinline{p.try_drop_egg(radian: float)}\\[-2pt]
-让当前AI队伍中某玩家对象 \lstinline{p} 尝试放置金蛋。参数中的弧度为以$+x$轴为极轴的极坐标系下，放置蛋相对玩家的方位。蛋在放置后会和玩家刚好相切。
+让当前AI队伍中某玩家对象 \lstinline{p} 尝试放置冰墩墩。参数中的弧度为以$+x$轴为极轴的极坐标系下，放置蛋相对玩家的方位。蛋在放置后会和玩家刚好相切。
 只有满足下列条件时，放置才能成功：
 	\begin{itemize}\setlength\itemsep{0em}
 	\item 该玩家手中有蛋
