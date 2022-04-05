@@ -1,3 +1,0 @@
-/Users/hejixuan/Desktop/杂七杂八/科协/THUAI/thuai2021-egg-aisdk/cpp/CMakeFiles/rebuild_cache.dir
-/Users/hejixuan/Desktop/杂七杂八/科协/THUAI/thuai2021-egg-aisdk/cpp/CMakeFiles/edit_cache.dir
-/Users/hejixuan/Desktop/杂七杂八/科协/THUAI/thuai2021-egg-aisdk/cpp/CMakeFiles/main.dir

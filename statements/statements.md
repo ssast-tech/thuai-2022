@@ -6,7 +6,7 @@
 
 3名选手各控制一支至多四个队员的队伍在圆形滑冰场上进行即 时对抗，队员需要推冰橇来收集场地上刷新的“冰墩墩”和“雪容融”(下简称“冰墩墩”)，并送回自己的球门 内;同时，还要防止其他队伍偷窃自己的“冰墩墩”。在规定时间内收集到最多数量的队伍将胜出。
 
-[题面下载](https://cdn.jsdelivr.net/gh/ssast-tech/thuai-egg-releases@2e3134fe/statements.pdf) // 这里的链接要改
+[题面下载](https://docs.saiblo.net/games/snow-cup.pdf)
 
 本次比赛支持平台：win32(x64), Linux(x64), macOS(x64)
 
@@ -31,7 +31,7 @@
 - 本地评测程序；
 - 开发说明和游戏详细规则。
 
-同时，您也可以在 https://gitee.com/panda2134/thuai2021-egg-aisdk/releases 下载最新构建的上述内容。
+同时，您也可以在https://github.com/ssast-tech/thuai-2022.git 下载最新构建的上述内容。
 
 ### 编写 AI
 

@@ -1,6 +1,6 @@
 # ai-sdk
 
-THUAI 2021 抢金蛋 AI SDK
+THUAI 2022 冰雪杯 AI SDK
 
 ## Usage
 
